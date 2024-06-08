@@ -2,6 +2,8 @@ import boto3
 import botocore.config
 import json
 
+Model_Name = "meta.llama2-13b-chat-v1"
+
 def generate_blog(blog_topic : str) -> str:
     prompt=f"""<s>[INST]Write a 200 words blog on the topic {blogtopic}[/INST]
     """
@@ -12,6 +14,11 @@ def generate_blog(blog_topic : str) -> str:
         "temperature": 0.5,
         "top_p": 0.9
     }
+
+    bedrock = boto3.client("bedrock-runtime", region_name = "us-east-1",
+                           config = botocore.config.Config(read_timeout = 300, retries = {"max_attemps":3})
+                          )
+    response = bedrock.invoke_model(modelId = Model_Name , body = json.dumps(body))
 
 
 def lambda_handler(event,context):

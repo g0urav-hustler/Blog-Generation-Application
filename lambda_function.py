@@ -19,8 +19,11 @@ def generate_blog(blog_topic : str) -> str:
                            config = botocore.config.Config(read_timeout = 300, retries = {"max_attemps":3})
                           )
     response = bedrock.invoke_model(modelId = Model_Name , body = json.dumps(body))
-    response_content = response.get("body").read()
-    print(response_content)
+    response_content=response.get('body').read()
+    response_data=json.loads(response_content)
+        
+    blog_details=response_data['generation']
+    return blog_details
 
 def lambda_handler(event,context):
 

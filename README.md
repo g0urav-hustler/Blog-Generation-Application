@@ -1,4 +1,4 @@
----
+<!-- ---
 
 title: Document Assistant
 
@@ -18,10 +18,9 @@ pinned: false
 
 license: mit
 
----
+--- -->
 
   
-
 ## Blog Generation App
 
   
@@ -29,10 +28,12 @@ license: mit
 
 **RestApi Link -**   https://3obv4jibod.execute-api.us-east-1.amazonaws.com/first_stage/generate-blog
 
-This applications help to generate blog on your desired topic using AI.
 
 
-## How to use App
+
+## Overview
+
+### This applications help to generate blog on your desired topic using AI.
 
 #### Web UI
 ![Web image](https://github.com/g0urav-hustler/Blog-Generation-Application/blob/main/readme_sources/photo_1.png)
@@ -64,10 +65,12 @@ AWS Lambda is a serverless, event-driven compute service that lets you run code 
 
 ### AWS Api Gateway
 Amazon API Gateway is an AWS service for creating, publishing, maintaining, monitoring, and securing REST, HTTP, and WebSocket APIs at any scale. API developers can create APIs that access AWS or other web services, as well as data stored in the AWS Cloud As an API Gateway API developer, you can create APIs for use in your own client applications.
+
 **For More Details** [Reference](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html#:~:text=Amazon%20API%20Gateway-,What%20is%20Amazon%20API%20Gateway%3F,stored%20in%20the%20AWS%20Cloud%20.)
 
 ### HuggingFace Spaces
 
 Each Spaces environment is limited to 16GB RAM, 2 CPU cores and 50GB of (not persistent) disk space by default, which you can use free of charge. You can upgrade to better hardware, including a variety of GPU accelerators and persistent storage, for a [competitive price](https://huggingface.co/pricing#spaces). To request an upgrade, please click the _Settings_ button in your Space and select your preferred hardware environment.
+
 **Deploy Streamlit app on huggingface -** [Reference](https://huggingface.co/docs/hub/en/spaces-overview)
 

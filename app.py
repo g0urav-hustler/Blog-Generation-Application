@@ -17,7 +17,7 @@ def response_generator(response):
 def main():
     st.title("Blog Generation App")
 
-    st.subheader("This app helps to generate blog on favorate topic that you want to write 🖋📃")
+    st.subheader("This app helps to generate blog on desired topic that you want to write 🖋📃")
     st.divider()
 
     st.subheader("Blog Topic")

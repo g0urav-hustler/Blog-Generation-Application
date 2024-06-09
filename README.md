@@ -1,6 +1,6 @@
 <!-- ---
 
-title: Document Assistant
+title: Blog Generation App
 
 emoji: 📃
 
@@ -47,7 +47,7 @@ license: mit
 ![Web image](https://github.com/g0urav-hustler/Blog-Generation-Application/blob/main/readme_sources/photo_3.png)
 
 
-## Technical Aspect
+## Technical Aspects
 
 This application uses Aws Bedrock services that has variety of LLMs for different function.
 

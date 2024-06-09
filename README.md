@@ -1,6 +1,6 @@
 ---
 title: Document Assistant
-emoji: 🤗
+emoji: 📃
 colorFrom: blue
 colorTo: yellow
 sdk: streamlit
@@ -12,4 +12,4 @@ license: mit
 
 ## Blog Generation App
 
-This applications help to generate blog on your desired topic
+This applications help to generate blog on your desired topic using AI. 

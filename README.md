@@ -26,7 +26,7 @@ license: mit
   
 **Website Link -** https://huggingface.co/spaces/g0urav-hustler/Blog-Generation-App
 
-**RestApi Link -**   https://3obv4jibod.execute-api.us-east-1.amazonaws.com/first_stage/generate-blog
+**RestApi Link -** https://3obv4jibod.execute-api.us-east-1.amazonaws.com/blog-generation-api/generate-blog
 
 
 

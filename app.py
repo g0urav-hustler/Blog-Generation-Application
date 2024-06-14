@@ -5,7 +5,7 @@ import json
 
 st.set_page_config(page_title="Blog Generation App",layout="wide")
 
-url = "https://3obv4jibod.execute-api.us-east-1.amazonaws.com/first_stage/generate-blog"
+url = "https://3obv4jibod.execute-api.us-east-1.amazonaws.com/blog-generation-api/generate-blog"
 
 # Streamed response emulator
 def response_generator(response):
@@ -43,13 +43,13 @@ def main():
 
                     model_response = json.loads(model_response)
 
-                    generated_blog = model_response['body']
+                    generated_blog = model_response['generated_blog']
 
                 st.write_stream(response_generator(generated_blog))
             
             except Exception as e:
 
-                st.warning("App is under maintenance due to service charges.")
+                st.warning("App is under maintenance due to service charges. It will be continue after some time.")
 
 
 if __name__ == "__main__":
